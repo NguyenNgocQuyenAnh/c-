@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLSVModelStoreContainer" CdmEntityContainer="QLSVEntities">
+    <EntitySetMapping Name="C_User">
+      <EntityTypeMapping TypeName="QLSVModel.C_User">
+        <MappingFragment StoreEntitySet="_User">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lops">
+      <EntityTypeMapping TypeName="QLSVModel.Lop">
+        <MappingFragment StoreEntitySet="Lop">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tenlop" ColumnName="tenlop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SVs">
+      <EntityTypeMapping TypeName="QLSVModel.SV">
+        <MappingFragment StoreEntitySet="SV">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_lop" ColumnName="id_lop" />
+          <ScalarProperty Name="tensv" ColumnName="tensv" />
+          <ScalarProperty Name="dtb" ColumnName="dtb" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
